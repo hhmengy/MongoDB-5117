@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css" />
+  
+  <title> {% block title %}{% endblock %}</title>
+</head>
+<body>
+  <div id="menu">
+    <div class="pure-menu">
+        <ul class="pure-menu-horizontal">
+          <li class="pure-menu-item">
+            <a href="{{ url_for("addInfo") }}" class="pure-menu-link">Add Info</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="{{ url_for("seeInfo") }}" class="pure-menu-link">See Info</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="{{ url_for("deleteBob") }}" class="pure-menu-link">Delete Bob Saget</a>
+          </li>
+          
+        </ul>
+    </div>
+  </div>
+
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+</div>
+</html>

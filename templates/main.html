@@ -1,0 +1,16 @@
+{% extends "parent.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Add Info</h1>       
+<form class="pure-form" action="{{ url_for("newInfo") }}" method="POST">
+  <legend>Give Me Your Info!</legend>
+  
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" placeholder="FirstName LastName" required="required" >
+  
+  <label for="name">Email</label>
+  <input type="text" id="email" name="email" placeholder="FakeEmail@aol.com" required="required" >
+  
+  <button type="submit" class="pure-button pure-button-primary">Submit</button>
+</form>
+{% endblock %}

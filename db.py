@@ -4,4 +4,4 @@ CONNECTION_STRING = "mongodb+srv://test:pass@5117presentation.2d0ro.mongodb.net/
 
 client = pymongo.MongoClient(CONNECTION_STRING)
 db = client.get_database('5117Presentation')
-cluster = pymongo.collection.Collection(db, 'info')
+coll = pymongo.collection.Collection(db, 'info')

@@ -7,6 +7,8 @@ View Database
 db
 ```
 
+db.createCollection('students')
+
 Show collections
 ```
 show collections
@@ -14,7 +16,7 @@ show collections
 
 Show all entries
 ```
-db.students.find
+db.students.find()
 ```
 
 Insert one entry

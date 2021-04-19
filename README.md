@@ -7,7 +7,10 @@ View Database
 db
 ```
 
+Create collection
+```
 db.createCollection('students')
+```
 
 Show collections
 ```
